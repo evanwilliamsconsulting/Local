@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Local</string>
+
+    <string name="localpod">LocalPOD</string>
+    <string name="home">home</string>
+    <string name="cloud">cloud</string>
+    <string name="blog">blog</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
