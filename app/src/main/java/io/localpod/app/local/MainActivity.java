@@ -51,25 +51,26 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
     private ListView mDrawerList;
-
+    private NavigationView navView;
 
     public void addListenerOnButton() {
 
 
-        image = (ImageView) findViewById(R.id.imageView1);
+       // image = (ImageView) findViewById(R.id.imageView1);
 
         //button = (Button) findViewById(R.id.btnChangeImage);
-        image.setOnClickListener(new OnClickListener() {
+       /* image.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
-                //mDrawerLayout.openDrawer(GravityCompat.START);
+                //mDrawerLayout.openDrawer(navView);
+               // //mDrawerLayout.openDrawer(GravityCompat.START);
                 image.setImageResource(R.drawable.home);
                 //mDrawerList.showContextMenu();
             }
 
         });
-
+*/
     }
 
 
@@ -79,14 +80,14 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        addListenerOnButton();
+       // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        //addListenerOnButton();
 
-        setSupportActionBar(toolbar);
-        android.support.v7.app.ActionBar actionbar = getSupportActionBar();
-        actionbar.setDisplayHomeAsUpEnabled(true);
-        actionbar.setHomeAsUpIndicator(R.drawable.icon);
+        //osetSupportActionBar(toolbar);
+        //android.support.v7.app.ActionBar actionbar = getSupportActionBar();
+        //actionbar.setDisplayHomeAsUpEnabled(true);
+        //actionbar.setHomeAsUpIndicator(R.drawable.icon);
 
 
         //setSupportActionBar(toolbar)
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+/*
         ImageView localIcon = (ImageView) findViewById(R.id.grid_item_image);
         mToggle = new ActionBarDrawerToggle(
                 this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -115,21 +116,22 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
-
+*/
+        /*
         mDrawerLayout.setOnClickListener(new android.view.View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
             }
         });
-
+*/
         //mDrawerLayout.addDrawerListener(mToggle);
         //mToggle.syncState();
 
 
 
-
-        NavigationView navView = (NavigationView) findViewById(R.id.nav_view);
+/*
+        navView = (NavigationView) findViewById(R.id.nav_view);
         //navView.setNavigationItemSelectedListener(this);
 
         if (navView != null) {
@@ -143,8 +145,8 @@ public class MainActivity extends AppCompatActivity {
                                    }
             });
         }
-
-        IconAdapter mAdapter = new IconAdapter(this,MOBILE_OS);
+*/
+  //      IconAdapter mAdapter = new IconAdapter(this,MOBILE_OS);
 
         //mDrawerList = (ListView)findViewById(R.id.drawer_view);
 
